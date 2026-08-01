@@ -1,0 +1,22 @@
+/********************************************************************
+ factorial  en recursividad
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+int sumar(int n)
+{
+    if (n==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return n+sumar(n-1);
+    }
+}
+int main() {
+   
+   cout<<sumar(4);
+
+    return 0;
+}
