@@ -1,0 +1,43 @@
+/******************************************************************************
+ingrese numeros en un vector y mostrar luego primero la lista de los numeros pares que fueron ingresados y
+luego la lista de los numeros negativos
+                
+
+*******************************************************************************/
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Ingrese la cantidad de numeros: ";
+    cin >> n;
+
+    vector<int> numeros(n);
+
+    for (int i = 0; i < n; i++) {
+        cout << "Ingrese el numero " << i + 1 << ": ";
+        cin >> numeros[i];
+    }
+
+    cout << "\a  numeros pares: ";
+    for (int i = 0; i < n; i++) {
+        if (numeros[i] % 2 == 0) {
+            cout << numeros[i] << " ";
+        }
+    }
+
+    cout << "\nLista de numeros negativos: ";
+    for (int i = 0; i < n; i++) {
+        if (numeros[i] < 0) {
+            cout << numeros[i] << " ";
+        }
+    }
+
+    cout << endl;
+
+    return 0;
+}
