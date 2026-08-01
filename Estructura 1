@@ -1,0 +1,35 @@
+/********************************************************************
+Estructura
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+class Coche{
+    public:
+    string marca;
+    string modelo;
+    int anio;
+        void mostrarDetalles(){
+        cout<<"Marca: "<< marca<<" modelo: "<<modelo<<" Año: "<<anio<<endl;
+    }
+};
+int main() {
+  Coche miCoche;
+  Coche tuCoche;
+  Coche suCoche;
+  
+  miCoche.marca="Toyota";
+  miCoche.modelo="Corrolla";
+  miCoche.anio=2026;
+  miCoche.mostrarDetalles();
+  
+  tuCoche.marca="Ford";
+  tuCoche.modelo="Mustang";
+  tuCoche.anio=2025;
+  tuCoche.mostrarDetalles();
+  
+  suCoche.marca="Tesla";
+  suCoche.modelo="Model 3";
+  suCoche.anio=2024;
+  suCoche.mostrarDetalles();
+  return 0;
+}
