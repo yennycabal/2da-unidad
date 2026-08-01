@@ -1,0 +1,24 @@
+/********************************************************************
+suma de matrices en recursividad
+*******************************************************************************/
+#include<iostream>
+using namespace std;
+
+int SumaMatriz(int Matriz[2][3],int filas,int columnas){
+    int r=0;
+    for(int i=0;i<filas;i++){
+        for(int j=0;j<columnas;j++){
+            r=r+Matriz[i][j];
+        }
+    }
+    return r;
+    
+}
+int main(){
+    int matriz [2][3]={
+        {1,2,3},
+        {4,5,6}
+    };
+    cout<<SumaMatriz(matriz,2,3);
+    return 0;
+}
