@@ -1,0 +1,21 @@
+/* encontrar el menor valor de la matriz */
+
+#include<iostream>
+using namespace std;
+ int main ()
+ {
+    
+    int a[]={10,20,50,40,60};
+    int menor=10;
+    for(int i=0;i<5;i++){
+        if(a[i]>menor){
+            a[i]=menor;
+        }
+        cout<<menor<<" ";
+    }
+    
+    return 0;
+    
+    }
+    
+    
