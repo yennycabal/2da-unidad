@@ -1,0 +1,26 @@
+/* En que posición se encuentra el elemento   */
+
+#include<iostream>
+using namespace std;
+ int main ()
+ {
+    
+    int a[]={10,20,30,40,50};
+    int dato =30;
+    int indice=-1;
+    for(int i=0;i<5;i++){
+        if(a[i]==dato){
+            indice=i;
+        }
+    }
+    if(indice!=-1){
+        cout<<"el elemento se encontro en la posición  "<<indice;
+    }
+    else{
+        cout<<"no se encontro";
+    }
+    return 0;
+    
+    }
+    
+    
