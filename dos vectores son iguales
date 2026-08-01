@@ -1,0 +1,37 @@
+/******************************************************************************
+Ingresar dos vectores y reportar si son iguales
+                     
+
+*******************************************************************************/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, a[50], b[50], igual = 1;
+
+    cout << "Ingrese el tamaño: ";
+    cin >> n;
+
+    cout << "Primer vector:" << endl;
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    cout << "Segundo vector:" << endl;
+    for (int i = 0; i < n; i++) {
+        cin >> b[i];
+    }
+
+    for (int i = 0; i < n; i++) {
+        if (a[i] != b[i]) {
+            igual = 0;
+        }
+    }
+
+    if (igual == 1)
+        cout << "Son iguales";
+    else
+        cout << "Son diferentes";
+
+    return 0;
+}
