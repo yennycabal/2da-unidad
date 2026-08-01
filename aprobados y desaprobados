@@ -1,0 +1,34 @@
+/******************************************************************************
+ingresar n notas en un vector y determinar el porcentaje de aprobados y el poncentaje de desaprobados
+                     
+
+*******************************************************************************/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, aprobados = 0, desaprobados = 0;
+    float notas[100];
+    
+    cout << "Cuantas notas desea ingresar: ";
+    cin >> n;
+
+    for (int i = 0; i < n; i++) {
+        cout << "Ingrese nota " << i + 1 << ": ";
+        cin >> notas[i];
+
+        if (notas[i] >= 11)
+            aprobados++;
+        else
+            desaprobados++;
+    }
+
+    cout << "\nPorcentaje de aprobados: "
+         << (aprobados * 100.0) / n << "%" << endl;
+
+    cout << "Porcentaje de desaprobados: "
+         << (desaprobados * 100.0) / n << "%" << endl;
+
+    return 0;
+}
