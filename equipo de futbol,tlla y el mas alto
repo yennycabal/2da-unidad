@@ -1,0 +1,35 @@
+/******************************************************************************
+ingrese los numeros y las tallas de los jugadores de un equipo de futbol 
+y determinar la talla y el nombre del jugador mas alto
+
+*******************************************************************************/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    string nombre[20], mayorNombre;
+    float talla[20], mayorTalla;
+
+    cout << "Ingrese cantidad de jugadores: ";
+    cin >> n;
+
+    for (int i = 0; i < n; i++) {
+        cout << "Jugador " << i + 1 << endl;
+        cout << "Nombre: ";
+        cin >> nombre[i];
+        cout << "Talla: ";
+        cin >> talla[i];
+
+        if (i == 0 || talla[i] > mayorTalla) {
+            mayorTalla = talla[i];
+            mayorNombre = nombre[i];
+        }
+    }
+
+    cout << "El jugador mas alto es: " << mayorNombre << endl;
+    cout << "Su talla es: " << mayorTalla << endl;
+
+    return 0;
+}
