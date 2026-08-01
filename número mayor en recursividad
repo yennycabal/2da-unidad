@@ -1,0 +1,23 @@
+/********************************************************************
+número mayor  en recursividad
+*******************************************************************************/
+#include<iostream>
+using namespace std;
+
+long long c(int num1,int num2)
+{
+    int mayor;
+    if(num1>num2){
+        mayor=num1;}
+      else {
+          mayor=num2;
+      } 
+      return mayor;
+    }
+int main(){
+    int num1,num2;
+    cin>>num1>>num2;
+    
+    cout<<"mayor:"<<c(num1,num2);
+    return 0;
+}
