@@ -1,0 +1,19 @@
+/********************************************************************
+factorial en recursividad
+*******************************************************************************/
+#include<iostream>
+using namespace std;
+
+long long factorial (int n)
+{
+    double r=1;
+    for(int i=1;i<=n;i++){
+        r=r*i;
+    }
+      return r;
+    }
+int main(){
+    
+    cout<<factorial (5);
+    return 0;
+}
